@@ -1,0 +1,44 @@
+/* Стили модуля My Module */
+.my-module-page {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .my-module-greeting {
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    color: white;
+    padding: 30px;
+    border-radius: 12px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 15px rgba(102, 126, 234, 0.4);
+  }
+  
+  .my-module-greeting h2 {
+    margin: 0;
+    font-size: 1.8em;
+  }
+  
+  .my-module-items {
+    background: #f8f9fa;
+    border-radius: 8px;
+    padding: 20px 30px;
+  }
+  
+  .my-module-actions {
+    margin-top: 20px;
+  }
+  
+  .my-module-actions .button {
+    display: inline-block;
+    background: #0678be;
+    color: white;
+    padding: 12px 24px;
+    border-radius: 6px;
+    text-decoration: none;
+    transition: background 0.2s;
+  }
+  
+  .my-module-actions .button:hover {
+    background: #045a8d;
+  }

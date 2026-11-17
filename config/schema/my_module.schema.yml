@@ -1,0 +1,26 @@
+# Схема для конфигурации my_module.settings.
+my_module.settings:
+  type: config_object
+  label: 'Настройки My Module'
+  mapping:
+    welcome_message:
+      type: string
+      label: 'Приветственное сообщение'
+    items_per_page:
+      type: integer
+      label: 'Элементов на странице'
+    enable_feature:
+      type: boolean
+      label: 'Включить дополнительную функцию'
+
+# Схема для настроек блока.
+block.settings.my_module_welcome_block:
+  type: block_settings
+  label: 'Настройки Welcome Block'
+  mapping:
+    block_message:
+      type: string
+      label: 'Сообщение блока'
+    show_greeting:
+      type: boolean
+      label: 'Показывать приветствие'

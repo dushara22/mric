@@ -1,0 +1,50 @@
+{# Содержимое страницы «Просмотр альбома - СДЮШОР №4» (из album.html). Шапка, меню и подвал — в school-document.html.twig. #}
+    <!-- Основной контент -->
+    <div class="container">
+        <main>
+            <div class="card page-title-card">
+                <h1 id="album-title">Загрузка...</h1>
+                <a href="{{ path('my_module.school_page', {page: 'media'}) }}" style="color: #1976D2; text-decoration: none; font-size: 0.9rem;">← Назад к альбомам</a>
+            </div>
+
+            <div class="card">
+                <!-- Сюда скрипт автоматически вставит все фотографии -->
+                <div class="photo-gallery" id="gallery-container"></div>
+            </div>
+        </main>
+
+        <!-- Правая колонка (Боковая панель) -->
+        <aside>
+            <div class="emblems">
+                <a href="https://www.mst.by/ru/" target="_blank"><img src="{{ assets }}/gerb.png" alt="Герб РБ" onerror="this.src='https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Emblem_of_Belarus.svg/200px-Emblem_of_Belarus.svg.png'"></a>
+                <a href="https://www.mst.by/ru/" target="_blank"><img src="{{ assets }}/mst.jpg" alt="Минспорт РБ" onerror="this.src='https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Ministry_of_Sports_and_Tourism_of_Belarus_emblem.png/200px-Ministry_of_Sports_and_Tourism_of_Belarus_emblem.png'"></a>
+            </div>
+
+            <div class="card">
+                <h2 data-lang-key="contacts_title">КОНТАКТЫ</h2>
+                <p><strong>ГСУСУ "Могилевская городская СДЮШОР №4"</strong></p>
+                <p>ул. Кутузова, 6 г. Могилев<br>212010 Республика Беларусь</p>
+                <p><strong>E-mail:</strong><br>mgdusch-4@yandex.ru<br>mgdusch-4@sportschool.by</p>
+                <p><strong>Телефоны:</strong><br>+375222412242<br>+375222411943</p>
+                <p><strong>Телефон горячей линии:</strong><br>+375222412242</p>
+            </div>
+
+            <div class="card">
+                <h2 data-lang-key="links_title">ПОЛЕЗНЫЕ ССЫЛКИ</h2>
+                <div class="link-image-container">
+                    <a href="https://xn----7sbgfh2alwzdhpc0c.xn--90ais/organization/30142/org-page" target="_blank">
+                        <img src="{{ assets }}/link-img.jpg" alt="Ссылка" onerror="this.style.display='none'">
+                    </a>
+                </div>
+                <div class="links-grid">
+                    <a href="https://www.mst.by/ru/" target="_blank" data-lang-key="link1">Министерство спорта РБ</a>
+                    <a href="https://mogilev.gov.by/" target="_blank" data-lang-key="link2">Могилевский городской исполнительный комитет</a>
+                    <a href="#" data-lang-key="link3">Белорусская федерация лыжных гонок</a>
+                    <a href="#" data-lang-key="link4">Белорусский союз конькобежцев</a>
+                    <a href="#" data-lang-key="link5">Белорусская Федерация Горнолыжного Спорта</a>
+                </div>
+            </div>
+        </aside>
+    </div>
+
+    

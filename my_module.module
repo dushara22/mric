@@ -1,0 +1,81 @@
+<?php
+
+declare(strict_types=1);
+
+/**
+ * @file
+ * Основной файл модуля My Module.
+ *
+ * Содержит хуки — процедурные функции для интеграции с ядром Drupal.
+ */
+
+use Drupal\Core\Entity\Display\EntityViewDisplayInterface;
+use Drupal\Core\Entity\EntityInterface;
+
+/**
+ * Implements hook_theme().
+ *
+ * Регистрирует Twig-шаблоны модуля (каталог templates/).
+ */
+function my_module_theme(): array {
+  return [
+    // Учебная страница модуля: templates/my-module-page.html.twig.
+    'my_module_page' => [
+      'variables' => [
+        'greeting' => NULL,
+        'message' => NULL,
+        'items' => [],
+      ],
+    ],
+    // Сайт СДЮШОР №4: templates/school-document.html.twig.
+    // Содержимое страниц лежит в templates/school/pages/{страница}.html.twig.
+    'my_module_school_document' => [
+      'template' => 'school-document',
+      'variables' => [
+        'school_page' => 'index',
+        'school_title' => '',
+        'assets' => '',
+        'lang' => 'ru',
+      ],
+    ],
+  ];
+}
+
+/**
+ * Implements hook_page_attachments().
+ *
+ * Подключаем глобальный CSS ко всем страницам Drupal.
+ */
+function my_module_page_attachments(array &$attachments): void {
+  $attachments['#attached']['library'][] = 'my_module/global';
+}
+
+/**
+ * Implements hook_preprocess_HOOK() for page templates.
+ */
+function my_module_preprocess_page(array &$variables): void {
+  $variables['my_module_year'] = date('Y');
+}
+
+/**
+ * Implements hook_cron().
+ */
+function my_module_cron(): void {
+  \Drupal::logger('my_module')->info('Cron run at @time', [
+    '@time' => date('Y-m-d H:i:s'),
+  ]);
+}
+
+/**
+ * Implements hook_ENTITY_TYPE_view() for node entities.
+ *
+ * Добавляем содержимое при просмотре ноды.
+ */
+function my_module_node_view(array &$build, EntityInterface $entity, EntityViewDisplayInterface $display, string $view_mode): void {
+  if ($view_mode === 'full') {
+    $build['my_module_extra'] = [
+      '#markup' => '<div class="my-module-extra">Дополнительный блок от My Module</div>',
+      '#weight' => 100,
+    ];
+  }
+}

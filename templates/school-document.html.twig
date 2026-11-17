@@ -1,0 +1,44 @@
+{#
+/**
+ * @file
+ * Полный HTML-документ сайта СДЮШОР №4.
+ *
+ * Шаблон отдаётся контроллером SchoolController без оформления темы Drupal:
+ * у сайта своя вёрстка (assets/style.css), поэтому тема сайта не нужна.
+ *
+ * Переменные:
+ * - school_page: машинное имя страницы (имя файла в templates/school/pages/).
+ * - school_title: заголовок вкладки браузера.
+ * - assets: URL каталога assets/ модуля (CSS, JS, картинки, album/).
+ * - lang: код языка документа.
+ */
+#}
+<!DOCTYPE html>
+<html lang="{{ lang }}">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ school_title }}</title>
+    <link rel="stylesheet" href="{{ assets }}/style.css">
+    {% if school_page == 'album' %}
+    <link rel="stylesheet" href="{{ assets }}/lightbox.css">
+    {% endif %}
+</head>
+<body>
+
+{% include '@my_module/school/_header.html.twig' %}
+
+{% include '@my_module/school/_nav.html.twig' %}
+
+{% include '@my_module/school/pages/' ~ school_page ~ '.html.twig' %}
+
+{% include '@my_module/school/_footer.html.twig' %}
+
+    <script>window.SCHOOL_ASSETS = {{ assets|json_encode|raw }};</script>
+    <script src="{{ assets }}/script.js"></script>
+    {% if school_page == 'album' %}
+    <script src="{{ assets }}/lightbox.js"></script>
+    <script src="{{ assets }}/album-script.js"></script>
+    {% endif %}
+</body>
+</html>

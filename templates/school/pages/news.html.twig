@@ -1,0 +1,171 @@
+{# Содержимое страницы «Новости - СДЮШОР №4» (из news.html). Шапка, меню и подвал — в school-document.html.twig. #}
+    <!-- Основной контент -->
+    <div class="container">
+        <main>
+            <div class="card page-title-card">
+                <h1>Новости</h1>
+            </div>
+
+            <!-- Новость 1 -->
+            <div class="card news-item">
+                <div class="news-icon">
+                    <img src="{{ assets }}/set.jpg" alt="Набор детей" onerror="this.style.display='none'">
+                </div>
+                <div class="news-content">
+                    <h2>НАБОР ДЕТЕЙ В ГРУППЫ НАЧАЛЬНОЙ ПОДГОТОВКИ</h2>
+                    <span class="date">Август 14, 2026</span>
+                    <p><em>Тренеры-преподаватели Могилевской городской СДЮШОР № 4 проводят набор мальчиков и девочек в группы начальной подготовки по:<br>
+                    - горнолыжному спорту (с 7 лет),<br>
+                    - конькобежному спорту (с 8 лет),<br>
+                    - лыжным гонкам (с 9 лет).</em></p>
+                    <div class="news-img-full">
+                        <img src="{{ assets }}/news.jpg" alt="Фото набора" onerror="this.style.display='none'">
+                    </div>
+                    <p><strong>Контактный телефон: (222) 41 22 42, 41 19 43</strong></p>
+                    <a href="#" class="btn-more">ПОДРОБНЕЕ...</a>
+                </div>
+            </div>
+
+            <!-- Новость 2 -->
+            <div class="card news-item">
+                <div class="news-icon">
+                    <img src="{{ assets }}/news3.jpg" alt="Помоги Еве" onerror="this.style.display='none'">
+                </div>
+                <div class="news-content">
+                    <h2>ПОМОГИ ЕВЕ!</h2>
+                    <span class="date">Июнь 10, 2026</span>
+                    <div class="news-img-full">
+                        <img src="{{ assets }}/news2.jpg" alt="Помощь Еве" onerror="this.style.display='none'">
+                    </div>
+                    <a href="#" class="btn-more">ПОДРОБНЕЕ...</a>
+                </div>
+            </div>
+
+            <!-- Новость 3 -->
+            <div class="card news-item">
+                <div class="news-icon">
+                    <img src="{{ assets }}/news5.jpg" alt="Конькобежный спорт" onerror="this.style.display='none'">
+                </div>
+                <div class="news-content">
+                    <h2>КОНЬКОБЕЖНЫЙ СПОРТ</h2>
+                    <span class="date">Июнь 1, 2026</span>
+                    <p><em>Открытый чемпионат и первенство Могилевской области по роликовым конькам прошли в г.Могилеве 26-27 июня 2026 года на роликобежном стадионе спортивного комплекса "Торпедо".</em></p>
+                    <div class="news-img-full">
+                        <img src="{{ assets }}/news4.jpg" alt="Роликовые коньки" onerror="this.style.display='none'">
+                    </div>
+                    <a href="{{ path('my_module.school_page', {page: 'news-skating'}) }}" class="btn-more">ПОДРОБНЕЕ...</a>
+                </div>
+            </div>
+
+            <!-- Новость 4 -->
+            <div class="card news-item">
+                <div class="news-icon">
+                    <img src="{{ assets }}/news6.jpg" alt="День памяти" onerror="this.style.display='none'">
+                </div>
+                <div class="news-content">
+                    <h2>ДЕНЬ ПАМЯТИ И СКОРБИ...</h2>
+                    <span class="date">Июнь 23, 2026</span>
+                    <p style="font-size: 1.2rem; color: #333;">В Беларуси прошел День всенародной памяти жертв Великой Отечественной войны и геноцида белорусского народа.</p>
+                    <p>85 лет назад, 22 июня 1941 года, началась Великая Отечественная война, ставшая величайшей трагедией и величайшим подвигом белорусского народа...</p>
+                    <a href="{{ path('my_module.school_page', {page: 'news-memory'}) }}" class="btn-more">ПОДРОБНЕЕ...</a>
+                </div>
+            </div>
+
+            <!-- Новость 5 -->
+            <div class="card news-item">
+                <div class="news-icon">
+                    <img src="{{ assets }}/news7.jpg" alt="Каникулы с пользой" onerror="this.style.display='none'">
+                </div>
+                <div class="news-content">
+                    <h2>КАНИКУЛЫ С ПОЛЬЗОЙ</h2>
+                    <span class="date">Июнь 23, 2026</span>
+                    <p>Лето — это время отдыха и веселья. Но, насколько полезны летние перерывы для спортсменов?</p>
+                    <p>С точки зрения науки перерывы более чем в две недели могут повлечь за собой потерю навыков и долгий восстановительный период...</p>
+                    <a href="{{ path('my_module.school_page', {page: 'news-summer'}) }}" class="btn-more">ПОДРОБНЕЕ...</a>
+                </div>
+            </div>
+
+            <!-- Новость 6 -->
+            <div class="card news-item">
+                <div class="news-icon">
+                    <img src="{{ assets }}/news8.jpg" alt="Осторожно мошенники" onerror="this.style.display='none'">
+                </div>
+                <div class="news-content">
+                    <h2>НЕ ДАЙ СЕБЯ ОБМАНУТЬ</h2>
+                    <span class="date">Июнь 11, 2026</span>
+                    <div class="news-img-full">
+                        <img src="{{ assets }}/news9.jpg" alt="Безопасный интернет" onerror="this.style.display='none'">
+                    </div>
+                    <a href="#" class="btn-more">ПОДРОБНЕЕ...</a>
+                </div>
+            </div>
+
+            <!-- Новость 7 -->
+            <div class="card news-item">
+                <div class="news-icon">
+                    <img src="{{ assets }}/news10.jpg" alt="Спортивный праздник" onerror="this.style.display='none'">
+                </div>
+                <div class="news-content">
+                    <h2>СПОРТИВНЫЙ ПРАЗДНИК</h2>
+                    <span class="date">Май 18, 2026</span>
+                    <p><em>Спортивный праздник, посвященный Дню работников физической культуры и спорта, состоялся 15 мая 2026 года на базе ФК "Днепр-Могилев". Сотрудники нашего учреждения приняли участие в спортивных эстафетах...</em></p>
+                    <div class="news-img-full">
+                        <img src="{{ assets }}/news11.jpg" alt="Спортивный праздник" onerror="this.style.display='none'">
+                    </div>
+                    <a href="{{ path('my_module.school_page', {page: 'news-sport'}) }}" class="btn-more">ПОДРОБНЕЕ...</a>
+                </div>
+            </div>
+
+            <!-- Новость 8 -->
+            <div class="card news-item">
+                <div class="news-icon">
+                    <img src="{{ assets }}/news12.jpg" alt="День семьи" onerror="this.style.display='none'">
+                </div>
+                <div class="news-content">
+                    <h2>15 МАЯ 2026 ГОДА - МЕЖДУНАРОДНЫЙ ДЕНЬ СЕМЬИ</h2>
+                    <span class="date">Май 15, 2026</span>
+                    <p><em>Семья – основа общества, традиций и будущего страны</em></p>
+                    <div class="news-img-full">
+                        <img src="{{ assets }}/news13.jpg" alt="День семьи" onerror="this.style.display='none'">
+                    </div>
+                    <a href="{{ path('my_module.school_page', {page: 'news-family'}) }}" class="btn-more">ПОДРОБНЕЕ...</a>
+                </div>
+            </div>
+
+        </main>
+
+        <!-- Правая колонка (Боковая панель) -->
+        <aside>
+            <div class="emblems">
+                <a href="https://www.mst.by/ru/" target="_blank"><img src="{{ assets }}/gerb.png" alt="Герб РБ" onerror="this.src='https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Emblem_of_Belarus.svg/200px-Emblem_of_Belarus.svg.png'"></a>
+                <a href="https://www.mst.by/ru/" target="_blank"><img src="{{ assets }}/mst.jpg" alt="Минспорт РБ" onerror="this.src='https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Ministry_of_Sports_and_Tourism_of_Belarus_emblem.png/200px-Ministry_of_Sports_and_Tourism_of_Belarus_emblem.png'"></a>
+            </div>
+
+            <div class="card">
+                <h2 data-lang-key="contacts_title">КОНТАКТЫ</h2>
+                <p><strong>ГСУСУ "Могилевская городская СДЮШОР №4"</strong></p>
+                <p>ул. Кутузова, 6 г. Могилев<br>212010 Республика Беларусь</p>
+                <p><strong>E-mail:</strong><br>mgdusch-4@yandex.ru<br>mgdusch-4@sportschool.by</p>
+                <p><strong>Телефоны:</strong><br>+375222412242<br>+375222411943</p>
+                <p><strong>Телефон горячей линии:</strong><br>+375222412242</p>
+            </div>
+
+            <div class="card">
+                <h2 data-lang-key="links_title">ПОЛЕЗНЫЕ ССЫЛКИ</h2>
+                <div class="link-image-container">
+                    <a href="https://xn----7sbgfh2alwzdhpc0c.xn--90ais/organization/30142/org-page" target="_blank">
+                        <img src="{{ assets }}/link-img.jpg" alt="Ссылка" onerror="this.style.display='none'">
+                    </a>
+                </div>
+                <div class="links-grid">
+                    <a href="https://www.mst.by/ru/" target="_blank" data-lang-key="link1">Министерство спорта РБ</a>
+                    <a href="https://mogilev.gov.by/" target="_blank" data-lang-key="link2">Могилевский городской исполнительный комитет</a>
+                    <a href="#" data-lang-key="link3">Белорусская федерация лыжных гонок</a>
+                    <a href="#" data-lang-key="link4">Белорусский союз конькобежцев</a>
+                    <a href="#" data-lang-key="link5">Белорусская Федерация Горнолыжного Спорта</a>
+                </div>
+            </div>
+        </aside>
+    </div>
+
+    

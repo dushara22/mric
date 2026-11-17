@@ -1,0 +1,13 @@
+# Вкладка «Информация» (по умолчанию)
+my_module.main_tab:
+  route_name: my_module.main_page
+  title: 'Информация'
+  base_route: my_module.main_page
+  weight: 0
+
+# Вкладка «Контакты»
+my_module.contact_tab:
+  route_name: my_module.contact_form
+  title: 'Обратная связь'
+  base_route: my_module.main_page
+  weight: 10

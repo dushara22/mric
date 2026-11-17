@@ -1,0 +1,23 @@
+# Сайт СДЮШОР №4 в главном меню.
+my_module.school_home:
+  title: 'СДЮШОР №4'
+  description: 'Сайт СДЮШОР №4 г. Могилёв'
+  route_name: my_module.school_home
+  menu_name: main
+  weight: 5
+
+# Ссылка в главном меню
+my_module.main_page:
+  title: 'My Module'
+  description: 'Главная страница модуля'
+  route_name: my_module.main_page
+  menu_name: main
+  weight: 10
+
+# Ссылка в админке: Конфигурация → Система
+my_module.admin_settings:
+  title: 'Настройки My Module'
+  description: 'Управление настройками модуля My Module.'
+  route_name: my_module.settings_form
+  parent: system.admin_config_system
+  weight: 100

@@ -1,0 +1,29 @@
+<nav>
+        <ul>
+            <li><a href="{{ path('my_module.school_home') }}" data-lang-key="nav_home">Главная</a></li>
+            
+            <li class="dropdown">
+                <a href="#" class="dropbtn" data-lang-key="nav_about">Об учреждении ▾</a>
+                <ul class="dropdown-content">
+                    <li><a href="{{ path('my_module.school_page', {page: 'history'}) }}" data-lang-key="sub_history">История</a></li>
+                    <li><a href="{{ path('my_module.school_page', {page: 'departments'}) }}" data-lang-key="sub_departments">Отделения школы</a></li>
+                    <li><a href="{{ path('my_module.school_page', {page: 'administration'}) }}" data-lang-key="sub_admin">Администрация</a></li>
+                    <li><a href="{{ path('my_module.school_page', {page: 'coaches'}) }}" data-lang-key="sub_coaches">Тренеры</a></li>
+                    <li><a href="{{ path('my_module.school_page', {page: 'pride'}) }}" data-lang-key="sub_pride">Наша гордость</a></li>
+                    
+                    <li class="dropdown-sub">
+                        <a href="{{ path('my_module.school_page', {page: 'media'}) }}" data-lang-key="sub_media">Медиа ▸</a>
+                        <ul class="dropdown-content-sub">
+                            <li><a href="{{ path('my_module.school_page', {page: 'media'}) }}">Фотогалерея</a></li>
+                            <li><a href="#">Видеозаписи</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+
+            <li><a href="{{ path('my_module.school_page', {page: 'news'}) }}" data-lang-key="nav_news">Новости</a></li>
+            <li><a href="{{ path('my_module.school_page', {page: 'anti-drug'}) }}" data-lang-key="nav_anticor">Антикоррупционный уголок</a></li>
+            <li><a href="{{ path('my_module.school_page', {page: 'one-window'}) }}" data-lang-key="nav_onewindow">Одно окно</a></li>
+            <li><a href="{{ path('my_module.school_page', {page: 'e-appeal'}) }}" data-lang-key="nav_appeal">Электронное обращение</a></li>
+        </ul>
+    </nav>

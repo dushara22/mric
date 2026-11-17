@@ -1,0 +1,32 @@
+# Библиотека учебной страницы модуля (/my-module).
+main:
+  version: 1.0.0
+  css:
+    component:
+      css/my_module.css: {}
+  js:
+    js/my_module.js:
+      attributes:
+        defer: true
+  dependencies:
+    - core/drupal
+    - core/drupalSettings
+    - core/once
+
+# Глобальная библиотека (подключается ко всем страницам).
+global:
+  version: 1.0.0
+  css:
+    base:
+      css/my_module_global.css: {}
+
+# Файлы сайта СДЮШОР №4 (подключаются шаблоном school-document.html.twig напрямую,
+# а эта библиотека позволяет встроить сайт в любую тему Drupal: '#attached' => ['library' => ['my_module/school']]).
+school:
+  version: 1.0.0
+  css:
+    theme:
+      assets/style.css: {}
+      assets/lightbox.css: {}
+  js:
+    assets/script.js: {}

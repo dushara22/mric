@@ -1,0 +1,48 @@
+{#
+/**
+ * @file
+ * Шаблон главной страницы модуля My Module.
+ *
+ * Доступные переменные:
+ * - greeting: Приветственное сообщение из сервиса.
+ * - message: Сообщение из конфигурации.
+ * - items: Список элементов для отображения.
+ */
+#}
+
+<div class="my-module-page">
+
+  {# Приветствие #}
+  {% if greeting %}
+    <div class="my-module-greeting">
+      <h2>{{ greeting }}</h2>
+    </div>
+  {% endif %}
+
+  {# Сообщение из настроек #}
+  {% if message %}
+    <div class="my-module-message">
+      <p>{{ message }}</p>
+    </div>
+  {% endif %}
+
+  {# Список элементов #}
+  {% if items is not empty %}
+    <div class="my-module-items">
+      <h3>{{ 'Возможности модуля:'|t }}</h3>
+      <ul>
+        {% for item in items %}
+          <li>{{ item }}</li>
+        {% endfor %}
+      </ul>
+    </div>
+  {% endif %}
+
+  {# Ссылка на контактную форму #}
+  <div class="my-module-actions">
+    <a href="{{ path('my_module.contact_form') }}" class="button">
+      {{ 'Связаться с нами'|t }}
+    </a>
+  </div>
+
+</div>

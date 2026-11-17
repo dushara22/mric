@@ -1,0 +1,61 @@
+{# Содержимое страницы «Акция «Вместе» - Антинаркотический уголок - СДЮШОР №4» (из news-vmeste.html). Шапка, меню и подвал — в school-document.html.twig. #}
+    <!-- Основной контент -->
+    <div class="container">
+        <main>
+            <div class="card page-title-card">
+                <h1>Областная антинаркотическая акция «Вместе»</h1>
+                <a href="{{ path('my_module.school_page', {page: 'anti-drug'}) }}" style="color: #1976D2; text-decoration: none; font-size: 0.9rem;">← Назад к антинаркотическому уголку</a>
+            </div>
+
+            <div class="card news-content-full">
+                <span class="date" style="font-size: 1rem; color: #666; margin-bottom: 20px; display: block;">Февраль 25, 2026</span>
+                
+                <p>В Могилевской области со 2 февраля по 2 марта 2026 года проходит областная антинаркотическая акция «Вместе», направленная на профилактику наркомании среди молодёжи и подростков.</p>
+
+                <!-- Фото Нарко 1 -->
+                <div class="news-img-full">
+                    <img src="{{ assets }}/Нарко_1.jpg" alt="Акция Вместе" onerror="this.parentElement.style.display='none'">
+                </div>
+
+                <p>Основная ее цель — повышение эффективности проводимых мероприятий, направленных на противодействие и распространение психоактивных веществ в подростковой среде, привитие основ здорового образа жизни.</p>
+                
+                <p>Акция является способом привлечения внимания подростков, родительской и педагогической общественности к проблеме наркомании, формирование у несовершеннолетнего негативного отношения к наркопотреблению и приобщение к здоровому образу жизни, предупреждение употребления и распространения наркотических средств среди несовершеннолетних путем проведения антинаркотической пропаганды, профилактических мероприятий.</p>
+
+            </div>
+        </main>
+
+        <!-- Правая колонка (Боковая панель) -->
+        <aside>
+            <div class="emblems">
+                <a href="https://www.mst.by/ru/" target="_blank"><img src="{{ assets }}/gerb.png" alt="Герб РБ" onerror="this.src='https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Emblem_of_Belarus.svg/200px-Emblem_of_Belarus.svg.png'"></a>
+                <a href="https://www.mst.by/ru/" target="_blank"><img src="{{ assets }}/mst.jpg" alt="Минспорт РБ" onerror="this.src='https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Ministry_of_Sports_and_Tourism_of_Belarus_emblem.png/200px-Ministry_of_Sports_and_Tourism_of_Belarus_emblem.png'"></a>
+            </div>
+
+            <div class="card">
+                <h2 data-lang-key="contacts_title">КОНТАКТЫ</h2>
+                <p><strong>ГСУСУ "Могилевская городская СДЮШОР №4"</strong></p>
+                <p>ул. Кутузова, 6 г. Могилев<br>212010 Республика Беларусь</p>
+                <p><strong>E-mail:</strong><br>mgdusch-4@yandex.ru<br>mgdusch-4@sportschool.by</p>
+                <p><strong>Телефоны:</strong><br>+375222412242<br>+375222411943</p>
+                <p><strong>Телефон горячей линии:</strong><br>+375222412242</p>
+            </div>
+
+            <div class="card">
+                <h2 data-lang-key="links_title">ПОЛЕЗНЫЕ ССЫЛКИ</h2>
+                <div class="link-image-container">
+                    <a href="https://xn----7sbgfh2alwzdhpc0c.xn--90ais/organization/30142/org-page" target="_blank">
+                        <img src="{{ assets }}/link-img.jpg" alt="Ссылка" onerror="this.style.display='none'">
+                    </a>
+                </div>
+                <div class="links-grid">
+                    <a href="https://www.mst.by/ru/" target="_blank" data-lang-key="link1">Министерство спорта РБ</a>
+                    <a href="https://mogilev.gov.by/" target="_blank" data-lang-key="link2">Могилевский городской исполнительный комитет</a>
+                    <a href="#" data-lang-key="link3">Белорусская федерация лыжных гонок</a>
+                    <a href="#" data-lang-key="link4">Белорусский союз конькобежцев</a>
+                    <a href="#" data-lang-key="link5">Белорусская Федерация Горнолыжного Спорта</a>
+                </div>
+            </div>
+        </aside>
+    </div>
+
+    

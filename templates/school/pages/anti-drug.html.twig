@@ -1,0 +1,123 @@
+{# Содержимое страницы «Антинаркотический уголок - СДЮШОР №4» (из anti-drug.html). Шапка, меню и подвал — в school-document.html.twig. #}
+    <!-- Основной контент -->
+    <div class="container">
+        <main>
+            <div class="card page-title-card">
+                <h1>АНТИНАРКОТИЧЕСКИЙ УГОЛОК</h1>
+            </div>
+
+            <!-- Новость 1 -->
+            <div class="card news-item">
+                <div class="news-icon">
+                    <img src="{{ assets }}/tabak.jpg" alt="Беларусь против табака" onerror="this.style.display='none'">
+                </div>
+                <div class="news-content">
+                    <h2>Республиканская акция «Беларусь против табака»</h2>
+                    <span class="date">Май 28, 2026</span>
+                    <p><em>С 11 мая по 5 июня 2026 года в нашей стране проходит республиканская информационно-образовательная акция «Беларусь против табака», приуроченная ко Всемирному дню без табака, который ежегодно отмечается 31 мая.</em></p>
+                    <div class="news-img-full">
+                        <img src="{{ assets }}/lungs.jpg" alt="Легкие" onerror="this.style.display='none'">
+                    </div>
+                    <a href="{{ path('my_module.school_page', {page: 'news-tabak'}) }}" class="btn-more">ПОДРОБНЕЕ...</a>
+                </div>
+            </div>
+
+            <!-- Новость 2 -->
+            <div class="card news-item">
+                <div class="news-icon">
+                    <img src="{{ assets }}/sigaret.jpg" alt="Опасность сигарет" onerror="this.style.display='none'">
+                </div>
+                <div class="news-content">
+                    <h2>Опасность сигарет</h2>
+                    <span class="date">Апрель 1, 2026</span>
+                    <p><em>Курение является одной из главных причин развития многих серьезных заболеваний. Согласно статистике ВОЗ, ежегодно него умирает около 6 млн людей по всему миру. Опасность курения невозможно переоценить. При поступлении в организм табачного дыма нарушается проведение нервных импульсов, которые ответственны за состояние большинства органов и систем. Последствием курения становится формирование множественных патологий.</em></p>
+                    <a href="{{ path('my_module.school_page', {page: 'news-sigaret'}) }}" class="btn-more">ПОДРОБНЕЕ...</a>
+                </div>
+            </div>
+
+            <!-- Новость 3 -->
+            <div class="card news-item">
+                <div class="news-icon">
+                    <img src="{{ assets }}/vmeste.jpg" alt="Акция Вместе" onerror="this.style.display='none'">
+                </div>
+                <div class="news-content">
+                    <h2>Областная антинаркотическая акция «Вместе»</h2>
+                    <span class="date">Февраль 25, 2026</span>
+                    <p><em>В Могилевской области со 2 февраля по 2 марта 2026 года проходит областная антинаркотическая акция «Вместе», направленная на профилактику наркомании среди молодёжи и подростков.</em></p>
+                    <div class="news-img-full">
+                        <img src="{{ assets }}/life.jpg" alt="Я выбираю жизнь" onerror="this.style.display='none'">
+                    </div>
+                    <a href="{{ path('my_module.school_page', {page: 'news-vmeste'}) }}" class="btn-more">ПОДРОБНЕЕ...</a>
+                </div>
+            </div>
+
+            <!-- Новость 4 -->
+            <div class="card news-item">
+                <div class="news-icon">
+                    <img src="{{ assets }}/otvet.jpg" alt="Ответственность" onerror="this.style.display='none'">
+                </div>
+                <div class="news-content">
+                    <h2>Ответственность за употребление и незаконный оборот наркотических средств</h2>
+                    <span class="date">Февраль 25, 2026</span>
+                    <p><em>Ответственность за употребление и незаконный оборот наркотических средств</em></p>
+                    <p>В Республике Беларусь ответственность за незаконные употребление, оборот наркотических средств, психотропных веществ, их аналогов и прекурсоров, предусмотрена кодексом Республики Беларусь об административных правонарушениях и уголовным кодексом Республики Беларусь.</p>
+                    <div class="news-img-full">
+                        <img src="{{ assets }}/mother.jpg" alt="Жизнь прекрасна" onerror="this.style.display='none'">
+                    </div>
+                    <a href="{{ path('my_module.school_page', {page: 'news-otvetstvennost'}) }}" class="btn-more">ПОДРОБНЕЕ...</a>
+                </div>
+            </div>
+
+            <!-- Новость 5 -->
+            <div class="card news-item">
+                <div class="news-icon">
+                    <img src="{{ assets }}/alco.jpg" alt="Алкоголь" onerror="this.style.display='none'">
+                </div>
+                <div class="news-content">
+                    <h2>Алкоголь - этого нам не надо!</h2>
+                    <span class="date">Декабрь 20, 2025</span>
+                    <p><em>Мы очень часто слышим, что алкоголь вреден для здоровья? Возможно, многие из вас видели, как он выглядит. Яркие красивые бутылки так и манят, но мало кто знает, что за яд в них таится.</em></p>
+                    <div class="news-img-full">
+                        <img src="{{ assets }}/head.jpg" alt="Алкоголь в голове" onerror="this.style.display='none'">
+                    </div>
+                    <a href="{{ path('my_module.school_page', {page: 'news-alcohol'}) }}" class="btn-more">ПОДРОБНЕЕ...</a>
+                </div>
+            </div>
+
+        </main>
+
+        <!-- Правая колонка (Боковая панель) -->
+        <aside>
+            <div class="emblems">
+                <a href="https://www.mst.by/ru/" target="_blank"><img src="{{ assets }}/gerb.png" alt="Герб РБ" onerror="this.src='https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Emblem_of_Belarus.svg/200px-Emblem_of_Belarus.svg.png'"></a>
+                <a href="https://www.mst.by/ru/" target="_blank"><img src="{{ assets }}/mst.jpg" alt="Минспорт РБ" onerror="this.src='https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Ministry_of_Sports_and_Tourism_of_Belarus_emblem.png/200px-Ministry_of_Sports_and_Tourism_of_Belarus_emblem.png'"></a>
+            </div>
+
+            <div class="card">
+                <h2 data-lang-key="contacts_title">КОНТАКТЫ</h2>
+                <p><strong>ГСУСУ "Могилевская городская СДЮШОР №4"</strong></p>
+                <p>ул. Кутузова, 6 г. Могилев<br>212010 Республика Беларусь</p>
+                <p><strong>E-mail:</strong><br>mgdusch-4@yandex.ru<br>mgdusch-4@sportschool.by</p>
+                <p><strong>Телефоны:</strong><br>+375222412242<br>+375222411943</p>
+                <p><strong>Телефон горячей линии:</strong><br>+375222412242</p>
+            </div>
+
+            <div class="card">
+                <h2 data-lang-key="links_title">ПОЛЕЗНЫЕ ССЫЛКИ</h2>
+                <div class="link-image-container">
+                    <a href="https://xn----7sbgfh2alwzdhpc0c.xn--90ais/organization/30142/org-page" target="_blank">
+                        <img src="{{ assets }}/link-img.jpg" alt="Ссылка" onerror="this.style.display='none'">
+                    </a>
+                </div>
+                <div class="links-grid">
+                    <a href="https://www.mst.by/ru/" target="_blank" data-lang-key="link1">Министерство спорта РБ</a>
+                    <a href="https://mogilev.gov.by/" target="_blank" data-lang-key="link2">Могилевский городской исполнительный комитет</a>
+                    <a href="#" data-lang-key="link3">Белорусская федерация лыжных гонок</a>
+                    <a href="#" data-lang-key="link4">Белорусский союз конькобежцев</a>
+                    <a href="#" data-lang-key="link5">Белорусская Федерация Горнолыжного Спорта</a>
+                </div>
+            </div>
+        </aside>
+    </div>
+
+    

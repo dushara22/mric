@@ -1,0 +1,18 @@
+name: 'My Custom Module'
+type: module
+description: 'Кастомный модуль Drupal 11: отдаёт сайт СДЮШОР №4 (страницы /school), а также контроллер, формы, блок, сервисы и REST API.'
+package: Custom
+core_version_requirement: ^11
+php: 8.3
+
+# Зависимости от других модулей (машинные имена).
+dependencies:
+  - drupal:node
+  - drupal:block
+  - drupal:rest
+  - drupal:serialization
+
+# Ссылка «Настроить» на странице модулей.
+configure: my_module.settings_form
+
+lifecycle: experimental

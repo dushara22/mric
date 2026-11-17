@@ -1,0 +1,116 @@
+{# Содержимое страницы «Конькобежный спорт - Новости - СДЮШОР №4» (из news-skating.html). Шапка, меню и подвал — в school-document.html.twig. #}
+    <!-- Основной контент -->
+    <div class="container">
+        <main>
+            <div class="card page-title-card">
+                <h1>КОНЬКОБЕЖНЫЙ СПОРТ</h1>
+                <a href="{{ path('my_module.school_page', {page: 'news'}) }}" style="color: #1976D2; text-decoration: none; font-size: 0.9rem;">← Назад к новостям</a>
+            </div>
+
+            <div class="card news-content-full">
+                <span class="date" style="font-size: 1rem; color: #666; margin-bottom: 20px; display: block;">Июнь 1, 2026</span>
+                
+                <p><em>Открытый чемпионат и первенство Могилевской области по роликовым конькам прошли в г.Могилеве 26-27 июня 2026 года на роликобежном стадионе спортивного комплекса "Торпедо".</em></p>
+
+                <!-- Фото 1 -->
+                <div class="news-img-full">
+                    <img src="{{ assets }}/ПМО1.jpg" alt="Фото 1" onerror="this.parentElement.style.display='none'">
+                </div>
+
+                <p>В соревнованиях приняло участие более 250 спортсменов по конькобежному спорту и роликобежному спорту из Республики Беларусь, Российской Федерации, Турции, Индии, Великобритании, Саудовской Аравии, ОАЭ.</p>
+                <p>В первый день соревнований спортсмены соревновались на дистанциях 300м, 500м по правилам конькобежного спорта. Во второй день соревнований спортсмены соревновались на дистанциях 300м, 500м, массстарте по правилам роллерного спорта.</p>
+
+                <!-- Фото 2 -->
+                <div class="news-img-full">
+                    <img src="{{ assets }}/ПМО2.jpg" alt="Фото 2" onerror="this.parentElement.style.display='none'">
+                </div>
+
+                <p>Спортсмены-учащиеся отделения конькобежного спорта Могилевской городской СДЮШОР №4 приняли участие в соревнованиях.</p>
+
+                <!-- Фото 3, 4, 5 -->
+                <div class="news-img-full">
+                    <img src="{{ assets }}/ПМО3.jpg" alt="Фото 3" onerror="this.parentElement.style.display='none'">
+                </div>
+                <div class="news-img-full">
+                    <img src="{{ assets }}/ПМО4.jpg" alt="Фото 4" onerror="this.parentElement.style.display='none'">
+                </div>
+                <div class="news-img-full">
+                    <img src="{{ assets }}/ПМО5.jpg" alt="Фото 5" onerror="this.parentElement.style.display='none'">
+                </div>
+
+                <p>Удача улыбнулась нашим спортсменам в первый день соревнований:</p>
+                <ul>
+                    <li>Татиевская Каролина - 3 место на дистанциях 300м и 500м,</li>
+                    <li>Светлова Арина - 2 место на дистанциях 300м и 500м,</li>
+                </ul>
+
+                <!-- Фото 6 -->
+                <div class="news-img-full">
+                    <img src="{{ assets }}/ПМО6.jpg" alt="Фото 6" onerror="this.parentElement.style.display='none'">
+                </div>
+
+                <ul>
+                    <li>Михалушкина София - 3 место на дистанциях 300м и 500м,</li>
+                    <li>Удотов Дмитрий - 2 место на дистанциях 300м и 500м,</li>
+                </ul>
+
+                <!-- Фото 7 -->
+                <div class="news-img-full">
+                    <img src="{{ assets }}/ПМО7.jpg" alt="Фото 7" onerror="this.parentElement.style.display='none'">
+                </div>
+
+                <ul>
+                    <li>Барбарчик Роман - 2 место на дистанциях 300м и 500м,</li>
+                    <li>Стеганцев Николай - 3 место на дистанции 300м,</li>
+                    <li>Тышкевич Никита - 3 место на дистанции 500м.</li>
+                </ul>
+
+                <!-- Фото 8, 9, 10 -->
+                <div class="news-img-full">
+                    <img src="{{ assets }}/ПМО8.jpg" alt="Фото 8" onerror="this.parentElement.style.display='none'">
+                </div>
+                <div class="news-img-full">
+                    <img src="{{ assets }}/ПМО9.jpg" alt="Фото 9" onerror="this.parentElement.style.display='none'">
+                </div>
+                <div class="news-img-full">
+                    <img src="{{ assets }}/ПМО10.jpg" alt="Фото 10" onerror="this.parentElement.style.display='none'">
+                </div>
+
+            </div>
+        </main>
+
+        <!-- Правая колонка (Боковая панель) -->
+        <aside>
+            <div class="emblems">
+                <a href="https://www.mst.by/ru/" target="_blank"><img src="{{ assets }}/gerb.png" alt="Герб РБ" onerror="this.src='https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Emblem_of_Belarus.svg/200px-Emblem_of_Belarus.svg.png'"></a>
+                <a href="https://www.mst.by/ru/" target="_blank"><img src="{{ assets }}/mst.jpg" alt="Минспорт РБ" onerror="this.src='https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Ministry_of_Sports_and_Tourism_of_Belarus_emblem.png/200px-Ministry_of_Sports_and_Tourism_of_Belarus_emblem.png'"></a>
+            </div>
+
+            <div class="card">
+                <h2 data-lang-key="contacts_title">КОНТАКТЫ</h2>
+                <p><strong>ГСУСУ "Могилевская городская СДЮШОР №4"</strong></p>
+                <p>ул. Кутузова, 6 г. Могилев<br>212010 Республика Беларусь</p>
+                <p><strong>E-mail:</strong><br>mgdusch-4@yandex.ru<br>mgdusch-4@sportschool.by</p>
+                <p><strong>Телефоны:</strong><br>+375222412242<br>+375222411943</p>
+                <p><strong>Телефон горячей линии:</strong><br>+375222412242</p>
+            </div>
+
+            <div class="card">
+                <h2 data-lang-key="links_title">ПОЛЕЗНЫЕ ССЫЛКИ</h2>
+                <div class="link-image-container">
+                    <a href="https://xn----7sbgfh2alwzdhpc0c.xn--90ais/organization/30142/org-page" target="_blank">
+                        <img src="{{ assets }}/link-img.jpg" alt="Ссылка" onerror="this.style.display='none'">
+                    </a>
+                </div>
+                <div class="links-grid">
+                    <a href="https://www.mst.by/ru/" target="_blank" data-lang-key="link1">Министерство спорта РБ</a>
+                    <a href="https://mogilev.gov.by/" target="_blank" data-lang-key="link2">Могилевский городской исполнительный комитет</a>
+                    <a href="#" data-lang-key="link3">Белорусская федерация лыжных гонок</a>
+                    <a href="#" data-lang-key="link4">Белорусский союз конькобежцев</a>
+                    <a href="#" data-lang-key="link5">Белорусская Федерация Горнолыжного Спорта</a>
+                </div>
+            </div>
+        </aside>
+    </div>
+
+    

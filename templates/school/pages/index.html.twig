@@ -1,0 +1,91 @@
+{# Содержимое страницы «СДЮШОР №4 г. Могилев» (из index.html). Шапка, меню и подвал — в school-document.html.twig. #}
+    <!-- Баннер -->
+    <div class="hero">
+        <h1 data-lang-key="hero_title">Добро пожаловать на сайт СДЮШОР №4</h1>
+        <p data-lang-key="hero_sub">Развиваем олимпийские виды спорта: лыжные гонки, конькобежный спорт, горнолыжный спорт</p>
+    </div>
+
+    <!-- Основной контент -->
+    <div class="container">
+        <main>
+            <div class="card">
+                <span class="date" data-lang-key="date_aug4">Декабрь 4, 2024</span>
+                <h2 data-lang-key="news1_title">БУДЬТЕ ГОТОВЫ И ПРОЯВИТЕ БДИТЕЛЬНОСТЬ</h2>
+                <p data-lang-key="news1_text">Вам звонят по телефону и сообщают, что кто-то из близких попал в беду и нужна крупная сумма денег. Не спешите выполнять указания звонящего. Мошенники умело используют психологические приемы. Положите трубку и перезвоните родственнику.</p>
+            </div>
+
+            <div class="card">
+                <span class="date" data-lang-key="date_aug20">Август 20, 2024</span>
+                <h2 data-lang-key="news2_title">СОВЕТЫ СВЕТОФОРА</h2>
+                <p data-lang-key="news2_text">Правила дорожного движения для юных спортсменов. Переходите дорогу только по пешеходному переходу и на зеленый свет светофора!</p>
+            </div>
+
+            <div class="card">
+                <span class="date" data-lang-key="date_jan26">Январь 26, 2021</span>
+                <h2 data-lang-key="news3_title">ТЕЛЕФОНЫ ДОВЕРИЯ</h2>
+                <p><strong>РЕСПУБЛИКАНСКАЯ "ДЕТСКАЯ ТЕЛЕФОННАЯ ЛИНИЯ" 8-801-100-1611</strong><br>
+                (анонимно, круглосуточно, бесплатно)</p>
+                <p>ДЕТСКАЯ ЛИНИЯ ПОМОЩИ г.МОГИЛЕВА 8-10-375-222-71-11-61</p>
+            </div>
+
+            <!-- Обновленный блок с видео (вместо iframe - картинка-ссылка) -->
+            <div class="card">
+                <span class="date" data-lang-key="date_nov29">Ноябрь 29, 2020</span>
+                <h2 data-lang-key="news4_title">Поддержка детей с ограниченными возможностями</h2>
+                
+                <a href="https://www.youtube.com/watch?v=7_IhLlTu6UQ" target="_blank" class="video-preview-link">
+                    <!-- Мы используем превью видео с YouTube. При клике откроется сам сайт YouTube -->
+                    <div class="video-preview" style="background-image: url('https://img.youtube.com/vi/7_IhLlTu6UQ/maxresdefault.jpg');">
+                        <div class="play-button">
+                            <svg viewBox="0 0 24 24" fill="white"><path d="M8 5v14l11-7z"/></svg>
+                        </div>
+                    </div>
+                </a>
+                
+            </div>
+        </main>
+
+        <aside>
+            <div class="emblems">
+                <a href="https://www.mst.by/ru/" target="_blank" title="Министерство спорта и туризма Республики Беларусь">
+                    <img src="{{ assets }}/gerb.png" alt="Герб РБ" onerror="this.src='https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Emblem_of_Belarus.svg/200px-Emblem_of_Belarus.svg.png'">
+                </a>
+                <a href="https://www.mst.by/ru/" target="_blank" title="Министерство спорта и туризма Республики Беларусь">
+                    <img src="{{ assets }}/mst.jpg" alt="Минспорт РБ" onerror="this.src='https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Ministry_of_Sports_and_Tourism_of_Belarus_emblem.png/200px-Ministry_of_Sports_and_Tourism_of_Belarus_emblem.png'">
+                </a>
+            </div>
+
+            <div class="card">
+                <h2 data-lang-key="contacts_title">КОНТАКТЫ</h2>
+                <p><strong>ГСУСУ "Могилевская городская СДЮШОР №4"</strong></p>
+                <p>ул. Кутузова, 6 г. Могилев<br>212010 Республика Беларусь</p>
+                <p><strong>E-mail:</strong><br>
+                mgdusch-4@yandex.ru<br>
+                mgdusch-4@sportschool.by</p>
+                <p><strong>Телефоны:</strong><br>
+                +375222412242<br>
+                +375222411943</p>
+                <p><strong>Телефон горячей линии:</strong><br>
+                +375222412242</p>
+            </div>
+
+            <div class="card">
+                <h2 data-lang-key="links_title">ПОЛЕЗНЫЕ ССЫЛКИ</h2>
+                <div class="link-image-container">
+                    <a href="https://xn----7sbgfh2alwzdhpc0c.xn--90ais/organization/30142/org-page" target="_blank">
+                        <img src="{{ assets }}/link-img.jpg" alt="Ссылка на страницу организации" onerror="this.style.display='none'">
+                    </a>
+                </div>
+
+                <div class="links-grid">
+                    <a href="https://www.mst.by/ru/" target="_blank" data-lang-key="link1">Министерство спорта РБ</a>
+                    <a href="https://mogilev.gov.by/" target="_blank" data-lang-key="link2">Могилевский городской исполнительный комитет</a>
+                    <a href="#" data-lang-key="link3">Белорусская федерация лыжных гонок</a>
+                    <a href="#" data-lang-key="link4">Белорусский союз конькобежцев</a>
+                    <a href="#" data-lang-key="link5">Белорусская Федерация Горнолыжного Спорта</a>
+                </div>
+            </div>
+        </aside>
+    </div>
+
+    

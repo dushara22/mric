@@ -1,0 +1,22 @@
+services:
+  # Наш кастомный сервис.
+  my_module.service:
+    class: Drupal\my_module\Service\MyModuleService
+    arguments:
+      - '@config.factory'
+      - '@current_user'
+      - '@logger.factory'
+
+  # Event Subscriber.
+  my_module.event_subscriber:
+    class: Drupal\my_module\EventSubscriber\MyModuleSubscriber
+    arguments:
+      - '@current_user'
+      - '@messenger'
+    tags:
+      - { name: event_subscriber }
+
+  # Менеджер плагинов «Greeting» (см. src/Attribute/Greeting.php).
+  plugin.manager.my_module_greeting:
+    class: Drupal\my_module\GreetingPluginManager
+    parent: default_plugin_manager

@@ -1,0 +1,85 @@
+{# Содержимое страницы «Спортивный праздник - Новости - СДЮШОР №4» (из news-sport.html). Шапка, меню и подвал — в school-document.html.twig. #}
+    <!-- Основной контент -->
+    <div class="container">
+        <main>
+            <div class="card page-title-card">
+                <h1>СПОРТИВНЫЙ ПРАЗДНИК</h1>
+                <a href="{{ path('my_module.school_page', {page: 'news'}) }}" style="color: #1976D2; text-decoration: none; font-size: 0.9rem;">← Назад к новостям</a>
+            </div>
+
+            <div class="card news-content-full">
+                <span class="date" style="font-size: 1rem; color: #666; margin-bottom: 20px; display: block;">Май 18, 2026</span>
+                
+                <p>Спортивный праздник, посвященный Дню работников физической культуры и спорта, состоялся 15 мая 2026 года на базе ФК "Днепр-Могилев". Сотрудники нашего учреждения приняли участие в спортивных эстафетах. Участие в эстафетах подарило мощный всплеск эмоций: от стартового адреналина и азарта до глубокого чувства гордости и эйфории на финише.</p>
+
+                <!-- Фото Физ1 -->
+                <div class="news-img-full">
+                    <img src="{{ assets }}/Физ1.jpg" alt="Спортивный праздник" onerror="this.parentElement.style.display='none'">
+                </div>
+
+                <!-- Фото Физ3 -->
+                <div class="news-img-full">
+                    <img src="{{ assets }}/Физ3.jpg" alt="Спортивный праздник" onerror="this.parentElement.style.display='none'">
+                </div>
+
+                <!-- Фото Физ4 -->
+                <div class="news-img-full">
+                    <img src="{{ assets }}/Физ4.jpg" alt="Спортивный праздник" onerror="this.parentElement.style.display='none'">
+                </div>
+
+                <!-- Фото Физ5 -->
+                <div class="news-img-full">
+                    <img src="{{ assets }}/Физ5.jpg" alt="Спортивный праздник" onerror="this.parentElement.style.display='none'">
+                </div>
+
+                <p>Так же в рамках данного мероприятия прошло награждение тренеров-преподавателей по видам спорта Могилевской городской СДЮШОР №4</p>
+
+                <!-- Фото Физ2 -->
+                <div class="news-img-full">
+                    <img src="{{ assets }}/Физ2.jpg" alt="Награждение тренеров" onerror="this.parentElement.style.display='none'">
+                </div>
+
+                <div class="info-box" style="text-align: center; margin-top: 30px;">
+                    <p style="font-size: 1.2rem; font-weight: bold; color: #0D47A1; margin-bottom: 15px;">Уважаемые тренеры-преподаватели!</p>
+                    <p>Желаем, чтобы ваше невероятное терпение и труд всегда приносили блестящие плоды!</p>
+                    <p>Пусть победы спортсменов становятся вашей главной гордостью, а каждый день приносит новые поводы для радости и профессиональной реализации!</p>
+                </div>
+
+            </div>
+        </main>
+
+        <!-- Правая колонка (Боковая панель) -->
+        <aside>
+            <div class="emblems">
+                <a href="https://www.mst.by/ru/" target="_blank"><img src="{{ assets }}/gerb.png" alt="Герб РБ" onerror="this.src='https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Emblem_of_Belarus.svg/200px-Emblem_of_Belarus.svg.png'"></a>
+                <a href="https://www.mst.by/ru/" target="_blank"><img src="{{ assets }}/mst.jpg" alt="Минспорт РБ" onerror="this.src='https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Ministry_of_Sports_and_Tourism_of_Belarus_emblem.png/200px-Ministry_of_Sports_and_Tourism_of_Belarus_emblem.png'"></a>
+            </div>
+
+            <div class="card">
+                <h2 data-lang-key="contacts_title">КОНТАКТЫ</h2>
+                <p><strong>ГСУСУ "Могилевская городская СДЮШОР №4"</strong></p>
+                <p>ул. Кутузова, 6 г. Могилев<br>212010 Республика Беларусь</p>
+                <p><strong>E-mail:</strong><br>mgdusch-4@yandex.ru<br>mgdusch-4@sportschool.by</p>
+                <p><strong>Телефоны:</strong><br>+375222412242<br>+375222411943</p>
+                <p><strong>Телефон горячей линии:</strong><br>+375222412242</p>
+            </div>
+
+            <div class="card">
+                <h2 data-lang-key="links_title">ПОЛЕЗНЫЕ ССЫЛКИ</h2>
+                <div class="link-image-container">
+                    <a href="https://xn----7sbgfh2alwzdhpc0c.xn--90ais/organization/30142/org-page" target="_blank">
+                        <img src="{{ assets }}/link-img.jpg" alt="Ссылка" onerror="this.style.display='none'">
+                    </a>
+                </div>
+                <div class="links-grid">
+                    <a href="https://www.mst.by/ru/" target="_blank" data-lang-key="link1">Министерство спорта РБ</a>
+                    <a href="https://mogilev.gov.by/" target="_blank" data-lang-key="link2">Могилевский городской исполнительный комитет</a>
+                    <a href="#" data-lang-key="link3">Белорусская федерация лыжных гонок</a>
+                    <a href="#" data-lang-key="link4">Белорусский союз конькобежцев</a>
+                    <a href="#" data-lang-key="link5">Белорусская Федерация Горнолыжного Спорта</a>
+                </div>
+            </div>
+        </aside>
+    </div>
+
+    

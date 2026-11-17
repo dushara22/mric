@@ -1,0 +1,97 @@
+{# Содержимое страницы «История - СДЮШОР №4 г. Могилев» (из history.html). Шапка, меню и подвал — в school-document.html.twig. #}
+    <!-- Основной контент страницы "История" -->
+    <div class="container">
+        <main>
+            <div class="card page-title-card">
+                <h1 data-lang-key="page_history_title">История</h1>
+            </div>
+
+            <!-- Блок 1: О школе (с фото кубков) -->
+            <div class="card history-block">
+                <div class="history-img-wrap">
+                    <img src="{{ assets }}/medals.jpg" alt="Кубки и медали школы" onerror="this.style.display='none'">
+                </div>
+                <div class="history-text">
+                    <h2 data-lang-key="hist_about_title">О школе</h2>
+                    <span class="date">Апрель 8, 2014</span>
+                    <p data-lang-key="hist_about_text">ГСУСУ "Могилевская городская СДЮШОР № 4" развивает три олимпийских вида спорта – <strong>горнолыжный спорт, конькобежный спорт, лыжные гонки.</strong></p>
+                    <a href="{{ path('my_module.school_page', {page: 'about-school'}) }}" class="btn-more" data-lang-key="btn_more">ПОДРОБНЕЕ...</a>
+                </div>
+            </div>
+
+            <!-- Блок 2: Администрация (с логотипом школы) -->
+            <div class="card history-block">
+                <div class="history-img-wrap">
+                    <img src="{{ assets }}/logo-school.jpg" alt="Эмблема школы" onerror="this.style.display='none'">
+                </div>
+                <div class="history-text">
+                    <h2 data-lang-key="hist_admin_title">Администрация</h2>
+                    <span class="date">Апрель 8, 2014</span>
+                    <p class="text-center" data-lang-key="hist_admin_text">Государственного специализированного учебно-спортивного учреждения "Могилевская городская специализированная детско-юношеская школа олимпийского резерва № 4"</p>
+                    <div style="text-align: center; margin-top: 20px;">
+                        <a href="{{ path('my_module.school_page', {page: 'administration'}) }}" class="btn-more" data-lang-key="btn_more">ПОДРОБНЕЕ...</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Блок 3: История школы (с коллажем и кнопкой) -->
+            <div class="card history-block full-width-block">
+                <h2 data-lang-key="hist_school_title">История школы</h2>
+                <span class="date">Апрель 8, 2014</span>
+                
+                <img src="{{ assets }}/collage.jpg" alt="История школы в фотографиях" class="full-img" onerror="this.style.display='none'">
+                
+                <p data-lang-key="hist_school_text1">Лыжный спорт в городе Могилеве славится давней традицией, однако массовости, широкого признания и высокого спортивного мастерства он достиг в послевоенный период. Большую роль в этом сыграло лыжное отделение в детско-юношеской спортивной школе при Могилевском гороне в 1946 году. Прививая с юных лет любовь к лыжным гонкам, обучая красивой экономной и самой совершенной технике, развивая общефизическую и специальную подготовку – создавалась многолетняя школа лыжного спорта.</p>
+                
+                <!-- Добавленная кнопка для истории школы -->
+                <div style="margin-top: 15px;">
+                    <a href="{{ path('my_module.school_page', {page: 'school-history'}) }}" class="btn-more" data-lang-key="btn_more">ПОДРОБНЕЕ...</a>
+                </div>
+            </div>
+        </main>
+
+        <!-- Правая колонка (Боковая панель) -->
+        <aside>
+            <div class="emblems">
+                <a href="https://www.mst.by/ru/" target="_blank" title="Министерство спорта и туризма Республики Беларусь">
+                    <img src="{{ assets }}/gerb.png" alt="Герб РБ" onerror="this.src='https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Emblem_of_Belarus.svg/200px-Emblem_of_Belarus.svg.png'">
+                </a>
+                <a href="https://www.mst.by/ru/" target="_blank" title="Министерство спорта и туризма Республики Беларусь">
+                    <img src="{{ assets }}/mst.jpg" alt="Минспорт РБ" onerror="this.src='https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Ministry_of_Sports_and_Tourism_of_Belarus_emblem.png/200px-Ministry_of_Sports_and_Tourism_of_Belarus_emblem.png'">
+                </a>
+            </div>
+
+            <div class="card">
+                <h2 data-lang-key="contacts_title">КОНТАКТЫ</h2>
+                <p><strong>ГСУСУ "Могилевская городская СДЮШОР №4"</strong></p>
+                <p>ул. Кутузова, 6 г. Могилев<br>212010 Республика Беларусь</p>
+                <p><strong>E-mail:</strong><br>
+                mgdusch-4@yandex.ru<br>
+                mgdusch-4@sportschool.by</p>
+                <p><strong>Телефоны:</strong><br>
+                +375222412242<br>
+                +375222411943</p>
+                <p><strong>Телефон горячей линии:</strong><br>
+                +375222412242</p>
+            </div>
+
+            <div class="card">
+                <h2 data-lang-key="links_title">ПОЛЕЗНЫЕ ССЫЛКИ</h2>
+                <div class="link-image-container">
+                    <a href="https://xn----7sbgfh2alwzdhpc0c.xn--90ais/organization/30142/org-page" target="_blank">
+                        <img src="{{ assets }}/link-img.jpg" alt="Ссылка на страницу организации" onerror="this.style.display='none'">
+                    </a>
+                </div>
+
+                <div class="links-grid">
+                    <a href="https://www.mst.by/ru/" target="_blank" data-lang-key="link1">Министерство спорта РБ</a>
+                    <a href="https://mogilev.gov.by/" target="_blank" data-lang-key="link2">Могилевский городской исполнительный комитет</a>
+                    <a href="#" data-lang-key="link3">Белорусская федерация лыжных гонок</a>
+                    <a href="#" data-lang-key="link4">Белорусский союз конькобежцев</a>
+                    <a href="#" data-lang-key="link5">Белорусская Федерация Горнолыжного Спорта</a>
+                </div>
+            </div>
+        </aside>
+    </div>
+
+    

@@ -1,0 +1,75 @@
+# ---------------------------------------------------------------------------
+# Сайт СДЮШОР №4 (бывший статический сайт, теперь страницы модуля).
+# Все страницы отдаёт один контроллер, содержимое — в templates/school/.
+# ---------------------------------------------------------------------------
+
+# Главная страница сайта: /school
+my_module.school_home:
+  path: '/school'
+  defaults:
+    _controller: '\Drupal\my_module\Controller\SchoolController::page'
+    page: 'index'
+  requirements:
+    _permission: 'access content'
+
+# Остальные страницы: /school/news, /school/history, /school/album?id=summer2021 ...
+# Список допустимых значений {page} собирается из SchoolPages::PAGES.
+my_module.school_page:
+  path: '/school/{page}'
+  defaults:
+    _controller: '\Drupal\my_module\Controller\SchoolController::page'
+  requirements:
+    _permission: 'access content'
+    page: 'about-school|administration|album|anti-drug|coaches|departments|e-appeal|history|media|news|news-alcohol|news-family|news-memory|news-otvetstvennost|news-sigaret|news-skating|news-sport|news-summer|news-tabak|news-vmeste|one-window|pride|school-history|ski-racing|skiing|speed-skating'
+
+# ---------------------------------------------------------------------------
+# Учебные страницы модуля.
+# ---------------------------------------------------------------------------
+
+# Главная страница модуля
+my_module.main_page:
+  path: '/my-module'
+  defaults:
+    _controller: '\Drupal\my_module\Controller\MyModuleController::mainPage'
+    _title: 'My Custom Module — Главная'
+  requirements:
+    _permission: 'access my_module'
+
+# JSON-эндпоинт
+my_module.json:
+  path: '/my-module/json'
+  defaults:
+    _controller: '\Drupal\my_module\Controller\MyModuleController::jsonEndpoint'
+  requirements:
+    _permission: 'access my_module'
+
+# Контактная форма
+my_module.contact_form:
+  path: '/my-module/contact'
+  defaults:
+    _form: '\Drupal\my_module\Form\ContactForm'
+    _title: 'Форма обратной связи'
+  requirements:
+    _permission: 'access my_module'
+
+# Страница с параметром
+my_module.detail_page:
+  path: '/my-module/{name}'
+  defaults:
+    _controller: '\Drupal\my_module\Controller\MyModuleController::detailPage'
+    _title: 'Детальная страница'
+    name: 'World'
+  requirements:
+    _permission: 'access my_module'
+    name: '[a-zA-Z0-9_-]+'
+
+# Страница настроек (admin)
+my_module.settings_form:
+  path: '/admin/config/my-module/settings'
+  defaults:
+    _form: '\Drupal\my_module\Form\SettingsForm'
+    _title: 'Настройки My Module'
+  requirements:
+    _permission: 'administer my_module'
+  options:
+    _admin_route: TRUE

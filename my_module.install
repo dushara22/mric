@@ -1,0 +1,100 @@
+<?php
+
+declare(strict_types=1);
+
+/**
+ * @file
+ * Установка, обновление и удаление модуля My Module.
+ */
+
+/**
+ * Implements hook_schema().
+ *
+ * Определяет структуру кастомной таблицы в БД.
+ */
+function my_module_schema(): array {
+  $schema['my_module_data'] = [
+    'description' => 'Таблица для хранения данных модуля My Module.',
+    'fields' => [
+      'id' => [
+        'description' => 'Первичный ключ.',
+        'type' => 'serial',
+        'unsigned' => TRUE,
+        'not null' => TRUE,
+      ],
+      'uid' => [
+        'description' => 'ID пользователя.',
+        'type' => 'int',
+        'unsigned' => TRUE,
+        'not null' => TRUE,
+        'default' => 0,
+      ],
+      'title' => [
+        'description' => 'Заголовок записи.',
+        'type' => 'varchar',
+        'length' => 255,
+        'not null' => TRUE,
+        'default' => '',
+      ],
+      'content' => [
+        'description' => 'Содержимое записи.',
+        'type' => 'text',
+        'size' => 'big',
+        'not null' => FALSE,
+      ],
+      'created' => [
+        'description' => 'Timestamp создания.',
+        'type' => 'int',
+        'not null' => TRUE,
+        'default' => 0,
+      ],
+    ],
+    'primary key' => ['id'],
+    'indexes' => [
+      'uid' => ['uid'],
+      'created' => ['created'],
+    ],
+  ];
+
+  return $schema;
+}
+
+/**
+ * Implements hook_install().
+ *
+ * Выполняется один раз при установке модуля.
+ */
+function my_module_install(): void {
+  \Drupal::messenger()->addStatus(t('Модуль My Module успешно установлен!'));
+}
+
+/**
+ * Implements hook_uninstall().
+ *
+ * Очистка при удалении модуля.
+ */
+function my_module_uninstall(): void {
+  // Таблица из hook_schema() удаляется автоматически.
+  // Здесь удаляем дополнительные данные, если нужно.
+  \Drupal::logger('my_module')->info('My Module has been uninstalled.');
+}
+
+/**
+ * Добавить поле 'status' в таблицу my_module_data.
+ *
+ * Это hook_update_N() — выполняется при обновлении модуля.
+ * Число 10001: первые цифры = major version, последние = порядковый номер.
+ */
+function my_module_update_10001(): void {
+  $schema = \Drupal::database()->schema();
+
+  if (!$schema->fieldExists('my_module_data', 'status')) {
+    $schema->addField('my_module_data', 'status', [
+      'type' => 'int',
+      'size' => 'tiny',
+      'not null' => TRUE,
+      'default' => 1,
+      'description' => 'Статус записи (1 = активна, 0 = архив).',
+    ]);
+  }
+}

@@ -1,0 +1,96 @@
+{# Содержимое страницы «Администрация - СДЮШОР №4 г. Могилев» (из administration.html). Шапка, меню и подвал — в school-document.html.twig. #}
+    <div class="container">
+        <main>
+            <div class="card page-title-card">
+                <h1>Администрация</h1>
+            </div>
+
+            <div class="card text-content-card">
+                <div class="admin-header">
+                    <p><strong>Государственного специализированного учебно-спортивного учреждения "Могилевская городская специализированная детско-юношеская школа олимпийского резерва № 4"</strong></p>
+                    <p><em>Дзяржаўнага спецыялізаванага вучэбна-спартыўнай установы "Магілёўская гарадская спецыялізаваная дзіцяча-юнацкая школа алімпійскага рэзерву № 4"</em></p>
+                </div>
+
+                <!-- Обновленный блок с директорами и фотографиями -->
+                <div class="directors-grid">
+                    <!-- Директор (фото 2) -->
+                    <div class="director-card">
+                        <img src="{{ assets }}/zam.jpg" alt="Директор" class="director-photo" onerror="this.style.display='none'">
+                        <h3>Директор</h3>
+                        <p><strong>Гордеенко Валентина Ивановна</strong></p>
+                        <p>тел. 41-19-43</p>
+                    </div>
+                    <!-- Заместитель директора (фото 1) -->
+                    <div class="director-card">
+                        <img src="{{ assets }}/dir.jpg" alt="Заместитель директора" class="director-photo" onerror="this.style.display='none'">
+                        <h3>Заместитель директора</h3>
+                        <p><strong>Роговцева Валентина Ивановна</strong></p>
+                        <p>тел. 41-22-42</p>
+                    </div>
+                </div>
+
+                <table class="admin-table">
+                    <thead>
+                        <tr>
+                            <th>Должность</th>
+                            <th>ФИО</th>
+                            <th>Рабочий телефон</th>
+                            <th>Кабинет</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Заведующий хозяйством</td>
+                            <td>Бломник Анна Степановна</td>
+                            <td>41-19-43</td>
+                            <td>№ 3</td>
+                        </tr>
+                        <tr>
+                            <td>Инспектор по кадрам, кладовщик</td>
+                            <td>Барабанова Ольга Васильевна</td>
+                            <td>41-19-43</td>
+                            <td>№ 3</td>
+                        </tr>
+                        <tr>
+                            <td>Инструктор-методист</td>
+                            <td>Кондратович Алла Михайловна</td>
+                            <td>41-22-42</td>
+                            <td>№ 7</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <div class="info-box" style="margin-top: 20px;">
+                    <p>На прием можно записаться предварительно в каб. № 7, по адресу электронной почты <a href="mailto:mgdusch-4@yandex.ru">mgdusch-4@yandex.ru</a> или позвонив по тел. <strong>41-22-42</strong></p>
+                </div>
+            </div>
+        </main>
+
+        <aside>
+            <div class="emblems">
+                <a href="https://www.mst.by/ru/" target="_blank"><img src="{{ assets }}/gerb.png" alt="Герб РБ" onerror="this.src='https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Emblem_of_Belarus.svg/200px-Emblem_of_Belarus.svg.png'"></a>
+                <a href="https://www.mst.by/ru/" target="_blank"><img src="{{ assets }}/mst.jpg" alt="Минспорт РБ" onerror="this.src='https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Ministry_of_Sports_and_Tourism_of_Belarus_emblem.png/200px-Ministry_of_Sports_and_Tourism_of_Belarus_emblem.png'"></a>
+            </div>
+            <div class="card">
+                <h2 data-lang-key="contacts_title">КОНТАКТЫ</h2>
+                <p><strong>ГСУСУ "Могилевская городская СДЮШОР №4"</strong></p>
+                <p>ул. Кутузова, 6 г. Могилев<br>212010 Республика Беларусь</p>
+                <p><strong>E-mail:</strong><br>mgdusch-4@yandex.ru<br>mgdusch-4@sportschool.by</p>
+                <p><strong>Телефоны:</strong><br>+375222412242<br>+375222411943</p>
+            </div>
+            <div class="card">
+                <h2 data-lang-key="links_title">ПОЛЕЗНЫЕ ССЫЛКИ</h2>
+                <div class="link-image-container">
+                    <a href="https://xn----7sbgfh2alwzdhpc0c.xn--90ais/organization/30142/org-page" target="_blank">
+                        <img src="{{ assets }}/link-img.jpg" alt="Ссылка" onerror="this.style.display='none'">
+                    </a>
+                </div>
+                <div class="links-grid">
+                    <a href="https://www.mst.by/ru/" target="_blank" data-lang-key="link1">Министерство спорта РБ</a>
+                    <a href="https://mogilev.gov.by/" target="_blank" data-lang-key="link2">Могилевский городской исполнительный комитет</a>
+                </div>
+            </div>
+        </aside>
+    </div>
+
+    
